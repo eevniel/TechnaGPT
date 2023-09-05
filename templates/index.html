@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %} " />
+    <link rel="icon" href="{% static '/images/logo.png' %}" />
+    <title>TechnaGPT</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="{% static 'images/logo.png' %}" alt="" width="80" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#solutions">Solutions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item login-button">
+              <a class="nav-link" href="login">Log In
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="a-icon--arrow-north-east400 a-icon--text a-icon--no-align top-[0.05em] relative f-ui-1 ml-2 -mr-4" style="width:1em;height:1em;" data-new="" aria-hidden="true" data-v-cbc994d7=""><polygon fill="currentColor" points="5 4.31 5 5.69 9.33 5.69 2.51 12.51 3.49 13.49 10.31 6.67 10.31 11 11.69 11 11.69 4.31 5 4.31" data-v-cbc994d7=""></polygon></svg>
+              </a>
+            </li>
+            <li class="nav-item register-button">
+              <a class="nav-link" href="register">Register
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="a-icon--arrow-north-east400 a-icon--text a-icon--no-align top-[0.05em] relative f-ui-1 ml-2 -mr-4" style="width:1em;height:1em;" data-new="" aria-hidden="true" data-v-cbc994d7=""><polygon fill="currentColor" points="5 4.31 5 5.69 9.33 5.69 2.51 12.51 3.49 13.49 10.31 6.67 10.31 11 11.69 11 11.69 4.31 5 4.31" data-v-cbc994d7=""></polygon></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 pt-5">
+            <h1 class="xl-text mt-5">
+              TechnaGPT <span class="text-primary fw-bold">Unleash the future</span>
+            </h1>
+            <p class="lead">
+              Imagine a tool that provides instant support, anytime and anywhere, seamlessly integrating into your website, app, or messaging platform.
+            </p>
+            <a href="#about" class="btn btn-primary text-white">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Details 1 -->
+    <section id="about" class="details my-5 position-relative">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-lg-6">
+            <h2 class="fw-bold">Welcome to your ultimate Artificial Intelligence Chatbot Platform</h2>
+            <hr class="hr-heading" />
+            <p>
+              Introducing our cutting-edge Artificial Intelligence Chatbot – your intelligent companion for seamless communication and efficient interaction. Designed to understand, assist, and engage, our chatbot harnesses the power of AI to create meaningful conversations and provide instant solutions. Say hello to a new era of personalized and automated interactions that elevate user experiences to unprecedented heights.
+            </p>
+            <ul class="list-unstyled lh-lg">
+              <li class="d-flex align-items-center">
+                <div>
+                  Unlock the future of communication with our AI Chatbot – your gateway to intelligent, efficient, and impactful conversations.
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <img src="{% static 'images/hand.png' %}" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Details 2 -->
+    <section id="about" class="details my-5 position-relative">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-lg-6">
+            <img src="{% static 'images/aboutbg2.png' %}" alt="" class="img-fluid rounded-3">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="fw-bold">Cutting-edge Technology</h2>
+            <hr class="hr-heading" />
+            <p>
+              TechnaGPT brings cutting-edge artificial intelligence technology to the forefront of communication, revolutionizing how businesses and individuals interact with their audiences.
+            </p>
+            <p>
+              Our Artificial Intelligence Chatbot is the embodiment of advanced technology and human-like interaction. With the ability to comprehend natural language and context, it's more than just a program; it's a conversational partner. From answering queries and guiding users to retrieving information and automating tasks, this chatbot is a versatile assistant that adapts to your needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions -->
+    <section id="solutions" class="solutions my-5">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center">
+            <h5><span class="badge bg-primary rounded-0 text-uppercase">
+              Solutions
+            </span></h5>
+            <h2 class="fw-bold">
+               Here are some key solutions that TechnaGPT can provide:
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card bg-secondary">
+              <img src="{% static 'images/ai-marketing.png' %}" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Personalized Marketing</h5>
+                <p class="card-text">
+                  Our AI can analyze user behaviors and preferences to offer personalized product recommendations, discounts, and content. It segment users based on their preferences and interactions, enabling you to send targeted marketing messages.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card bg-secondary">
+              <img src="{% static 'images/ai-ecommerce.png' %}" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">E-Commerce Assistance</h5>
+                <p class="card-text">
+                  TechnaGPT can provide detailed product information, specifications, and pricing, assisting customers in their buying decisions. It can help customers track their orders and provide delivery status updates. It can verify addresses in real time to ensure accurate and timely deliveries.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- Solutions Row 2 -->
+         <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card bg-secondary">
+              <img src="{% static 'images/ai-availability.png' %}" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Customer Support and Service</h5>
+                <p class="card-text">
+                  Techna offers round-the-clock customer support, providing instant responses to frequently asked questions and issues.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card bg-secondary">
+              <img src="{% static 'images/ai-data.png' %}" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Information Retrieval</h5>
+                <p class="card-text">
+                  TechnaGPT can retrieve data from databases or knowledge bases, providing users with accurate and up-to-date information.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise" class="expertise bg-secondary py-5 my-6">
+      <div class="container">
+        <div class="row mb-5">
+        </div>
+        <!-- Expertise Row 1 -->
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card bg-transparent border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-cog fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Customization with Ease:</h4>
+                <p>TechnaGPT offers an intuitive and user-friendly interface that allows you to effortlessly customize your chatbot's personality, tone, and responses.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-transparent border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-network-wired fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Multichannel Integration:</h4>
+                <p>Whether your audience prefers web-based interactions, mobile apps, or social media platforms, our platform seamlessly adapt to diverse channels.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-transparent border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-headset fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Enhanced Customer Support:</h4>
+                <p>Improve your customer support efficiency with Techna's 24/7 availability.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-transparent border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-list-check fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Automated Task Management</h4>
+                <p>Efficiency is at the core of TechnaGPT. Let our chatbots handle repetitive tasks, such as appointment scheduling, order processing, and data retrieval.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expertise Row 2 -->
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card bg-transparent border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-chart-line fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Advanced Analytics and Insights:</h4>
+                <p>Track the performance and effectiveness of your chatbots through our comprehensive analytics dashboard.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-transparent border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-fingerprint fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Security and Privacy:</h4>
+                <p>Rest assured that your data and user interactions are secure with Techna's top-notch encryption and privacy protocols.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-transparent border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-brain fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Continuous Learning and Evolution:</h4>
+                <p>Techna is constantly learning from user interactions, evolving to provide even more accurate and relevant responses.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-transparent border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-file fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Dedicated Support and Resources:</h4>
+                <p>Our team of AI experts is committed to helping you get the most out of Techna. From initial setup to ongoing support and training, we are here to assist you every step of the way.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing my-6">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center">
+            <h2 class="fw-bold">
+              Pricing
+            </h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <!-- Pricing Col 1 -->
+          <div class="col-md-3">
+            <div class="card bg-secondary text-center rounded-0 pricing-card">
+              <div class="card-body">
+                <div class="xl-text fw-bold">$5/Mo</div>
+                <h4 class="card-title text-primary text-uppercase fw-bold mb-5">
+                  Standard
+                </h4>
+                <p>Ideal for small businesses and startups looking to dip their toes into AI-powered chatbot technology</p>
+                  <ul class="list-unstyled lh-lg mt-5">
+                    <li class="text-uppercase fs-6 fw-bold mb-4">
+                      Email Support
+                    </li>
+                    <li class="text-uppercase fs-6 fw-bold mb-4">
+                      Standard analytics and performance tracking
+                    </li>
+                    <li class="text-uppercase fs-6 fw-bold">
+                      Up to 1,000 monthly chatbot interactions
+                    </li>
+                  </ul>
+                  <a href="#contact" class="btn btn-primary text-white mt-6 fw-bold">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pricing Col 2 -->
+          <div class="col-md-3">
+            <div class="card bg-secondary text-center rounded-0 pricing-card">
+              <h5><span class="badge bg-primary rounded-0 text-uppercase mt-2">
+                Recommended
+              </span></h5>
+              <div class="card-body">
+                <div class="xl-text fw-bold">$15/Mo</div>
+                <h4 class="card-title text-primary text-uppercase fw-bold mb-5">
+                  Pro
+                </h4>
+                <p>Perfect for growing businesses seeking advanced chatbot capabilities and increased user interactions</p>
+                  <ul class="list-unstyled lh-lg mt-5">
+                    <li class="text-uppercase fs-6 fw-bold mb-4">
+                      Advanced analytics with dedicated insights and user behavoir analysis
+                    </li>
+                    <li class="text-uppercase fs-6 fw-bold mb-4">
+                      Customizable chatbot with personalized branding and tone
+                    </li>
+                    <li class="text-uppercase fs-6 fw-bold">
+                      Up to 1,0000 monthly chatbot interactions
+                    </li>
+                  </ul>
+                  <a href="#contact" class="btn btn-primary text-white mt-6 fw-bold">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pricing Col 3 -->
+          <div class="col-md-3">
+            <div class="card bg-secondary text-center rounded-0 pricing-card">
+              <div class="card-body">
+                <div class="xl-text fw-bold">$49/Mo</div>
+                <h4 class="card-title text-primary text-uppercase fw-bold mb-5">
+                  Elite
+                </h4>
+                <p>Tailored for large enterprises and organizations with high-volume chatbot demands and specific requirements</p>
+                  <ul class="list-unstyled lh-lg mt-5">
+                    <li class="text-uppercase fs-6 fw-bold mb-4">
+                      24/7 priority support with fast response times.
+                    </li>
+                    <li class="text-uppercase fs-6 fw-bold mb-4">
+                      Advanced security features and compliance support
+                    </li>
+                    <li class="text-uppercase fs-6 fw-bold">
+                      Unlimited monthly chatbot interactions
+                    </li>
+                  </ul>
+                  <a href="#contact" class="btn btn-primary text-white mt-6 fw-bold">Subscribe</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    <!-- Footer Social Media -->
+    <section class="social text-bg-dark py-6 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3 text-center fs-4">
+            <p>
+              Connect with Techna and stay updated on the latest trends, news, and innovations.
+            </p>
+            <div class="social-icons d-flex justify-content-center gap-4">
+              <a href="https://www.facebook.com" target="_blank" style="color:white;"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="https://www.twitter.com" target="_blank" style="color:white;"><i class="fab fa-twitter fa-2x"></i></a>
+              <a href="https://www.instagram.com" target="_blank" style="color:white"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-top border-primary bg-dark text-white py-4">
+      <div class="container d-flex justify-content-center flex-column align-items-center">
+        <p class="d-md-block">
+          Copyright &copy; TechnaGPT 2023
+        </p>
+        <h5 class="text-center text-uppercase" style="display:inline">Powered By</h5>
+        <div class="d-flex justify-content-center align-items-center text-center">
+          <div>
+            <img src="{% static 'images/openai.png' %}" alt="" width="100px">
+          </div>
+      </div>
+    </footer>
+
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
