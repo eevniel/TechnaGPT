@@ -1,6 +1,7 @@
 # TechnaGPT
 A django based chatgpt clone with landing page, login system and chatbot history
 
+<img src="showcase.gif">
 <img src="1.png">
 <p align="center">
 <img src="2.png">
